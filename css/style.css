@@ -44,9 +44,9 @@ body {
 
 
 .item {
-   margin-bottom: 40px;
+   width: calc(100% / 3 - (10px * 6));
+   margin: 0 10px 40px 10px;
    float: left;
-   width: calc(100% / 3);
    display: block;
 }
 
