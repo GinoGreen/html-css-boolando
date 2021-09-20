@@ -1,3 +1,117 @@
-h1 {
-   color: red;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   width: 80%;
+   margin: 20px auto;
+}
+
+.percentage-discount::after {
+   content: '%';
+   padding-left: 3px;
+}
+
+.percentage-discount::before {
+   content: '-';
+}
+
+.discounted::after, .original-price::after {
+   content: '\20AC';
+   padding-left: 3px;
+}
+
+/* cursor pointer  */
+.wish, .name-item, .brand, .image-item {
+   cursor: pointer;
+}
+
+/* BOLD  */
+.bottom-label, .name-item, .price {
+   font-weight: bold;
+}
+
+
+/*  */
+
+.row {
+   margin-bottom: 40px;
+}
+
+.item {
+   margin: auto;
+   width: calc(99% / 3);
+   display: inline-block;
+}
+
+/* IMMAGINE */
+.image-item img {
+   width: 100%;
+}
+
+.image-item {
+   position: relative;
+}
+
+.wish, .bottom-label, .image-hover {
+   position: absolute;
+}
+
+/* HOVER  */
+.image-item:hover .image-hover {
+   visibility: hidden;
+}
+
+/* ETICHETTE */
+.wish {
+   padding: 5px 14px;
+   background-color: #FFF;
+   font-size: 30px;
+   top: 10px;
+   right: 0;
+}
+
+.bottom-label {
+   color: white;
+   position: absolute;
+   left: 0;
+   bottom: 30px;
+}
+
+.bottom-label .percentage-discount {
+   background-color: #EB0037;
+   margin-right: 2px;
+}
+
+.bottom-label .sustainable {
+   text-transform: capitalize; /* capitalize */
+   background-color: #00875A;
+}
+
+.percentage-discount, .sustainable {
+   padding: 5px 10px;
+}
+
+/* CAPTION ITEM  */
+.caption-item {
+   margin: 15px 0;
+}
+
+.name-item {
+   text-transform: uppercase;
+}
+
+.price .discounted {
+   color: #EB0037;
+}
+
+.price .original-price {
+   text-decoration: line-through;
+   text-transform: capitalize; /* capitalize */
 }
