@@ -32,22 +32,22 @@ body {
    cursor: pointer;
 }
 
-/* BOLD  */
+/* bold */
 .bottom-label, .name-item, .price {
    font-weight: bold;
 }
 
-
-/*  */
-
-.row {
-   margin-bottom: 40px;
+/* capitalize */
+.brand, .sustainable {
+   text-transform: capitalize;
 }
 
+
 .item {
-   margin: auto;
-   width: calc(99% / 3);
-   display: inline-block;
+   margin-bottom: 40px;
+   float: left;
+   width: calc(100% / 3);
+   display: block;
 }
 
 /* IMMAGINE */
@@ -79,7 +79,6 @@ body {
 
 .bottom-label {
    color: white;
-   position: absolute;
    left: 0;
    bottom: 30px;
 }
@@ -90,7 +89,6 @@ body {
 }
 
 .bottom-label .sustainable {
-   text-transform: capitalize; /* capitalize */
    background-color: #00875A;
 }
 
@@ -113,5 +111,4 @@ body {
 
 .price .original-price {
    text-decoration: line-through;
-   text-transform: capitalize; /* capitalize */
 }
